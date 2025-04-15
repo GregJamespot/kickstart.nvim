@@ -26,6 +26,13 @@ local plugins = {
       },
     },
   },
+  {
+    'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    options = function()
+      return require 'custom.configs.lualine'
+    end,
+  },
 }
 
 return plugins
