@@ -1,5 +1,5 @@
 local opts = {
-  theme = 'material',
+  theme = 'onelight',
 }
 
 return opts

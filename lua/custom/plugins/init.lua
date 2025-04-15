@@ -29,7 +29,7 @@ local plugins = {
   {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
-    options = function()
+    opts = function()
       return require 'custom.configs.lualine'
     end,
   },
