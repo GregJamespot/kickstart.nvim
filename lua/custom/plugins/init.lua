@@ -1,5 +1,7 @@
 local ensure_installed = require 'mason-lspconfig.ensure_installed'
-require('lspconfig').bashls.setup {}
+require('lspconfig').bashls.setup = function()
+  return require 'custom.configs.bashls'
+end
 
 -- You can add your own plugins here or in other files in this directory!
 --  I promise not to create any merge conflicts in this directory :)
